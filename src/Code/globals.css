@@ -1,0 +1,30 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+body {
+  @apply bg-truth text-white font-body;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display tracking-wide;
+}
+
+a {
+  @apply text-highlight hover:underline;
+}
+
+button {
+  @apply transition duration-200 ease-in-out;
+}
+
+/* Utility Classes */
+.section {
+  @apply py-16 px-4 max-w-7xl mx-auto;
+}
+
+.card {
+  @apply bg-neutral-900 p-6 rounded-xl border border-neutral-700 shadow;
+}
