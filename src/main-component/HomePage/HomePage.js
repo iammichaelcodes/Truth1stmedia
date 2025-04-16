@@ -10,7 +10,7 @@ import VideoNews from '../../components/VideoNews/VideoNews';
 import HighlightsNews from '../../components/HighlightsNews/HighlightsNews';
 import SponsoredNews from '../../components/SponsoredNews/SponsoredNews';
 import HomeTest from '../../Code/HomepageSections';
-import { Channels } from './mods/components/Channels';
+import { Channels } from './mods/components/channels';
 import { TokenCta } from './mods/components/TokenCta';
 import { MemeWall } from './mods/components/memewall';
 import { TruthFirstReports } from './mods/components/TruthFirstReport';
