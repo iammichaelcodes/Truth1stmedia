@@ -10,6 +10,9 @@ import VideoNews from '../../components/VideoNews/VideoNews';
 import HighlightsNews from '../../components/HighlightsNews/HighlightsNews';
 import SponsoredNews from '../../components/SponsoredNews/SponsoredNews';
 import HomeTest from '../../Code/HomepageSections';
+import { Channels } from './mods/components/channels';
+import { TokenCta } from './mods/components/token_cta';
+import { MemeWall } from './mods/components/memewall';
 
 const HomePage3 = () => {
     return (
@@ -20,9 +23,17 @@ const HomePage3 = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-9">
-                    
-                                 <Hero2 /> 
-                              {/*   <FeaturesNews />
+
+                                <Hero2 />
+                                <Channels />
+                                <TokenCta />
+                                <MemeWall />
+
+                                
+
+
+
+                                {/*   <FeaturesNews />
                                 <VideoNews />
                                 <HighlightsNews colClass={'col-lg-12'} hideClass={'d-none'} /> */}
                             </div>

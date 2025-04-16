@@ -51,30 +51,30 @@ const Hero2 = (props) => {
 
 
                 </div> */}
-                <div className="hero-container" style={{ 
-                backgroundImage: `url(${bgImage})`,  // Replace with your image path
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                height: '100vh',
-                width: '100%',
-                position: 'relative'
-            }}>
-                <div className="slide-content" style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    textAlign: 'center',
-                    color: '#fff'
+                <div className="hero-container" style={{
+                    backgroundImage: `url(${bgImage})`,  // Replace with your image path
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height: '90vh',
+                    width: '100%',
+                    position: 'relative'
                 }}>
-                    <div className="slide-title">
-                        <h2>Your Hero Title</h2>
-                    </div>
-                    <div className="slide-text">
-                        <p>Your hero description goes here</p>
+                    <div className="slide-content" style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        textAlign: 'center',
+                        color: '#fff'
+                    }}>
+                        <div className="slide-title">
+                            <h2>SATIRE MEETS SUBSTANCE</h2>
+                        </div>
+                        <div className="slide-text">
+                            <p>Cutting-edge satire exposing corruption and Idiocy across the political spectrum, fueled by the community and crypto.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
     )
