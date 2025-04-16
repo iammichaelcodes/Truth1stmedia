@@ -10,9 +10,15 @@ import VideoNews from '../../components/VideoNews/VideoNews';
 import HighlightsNews from '../../components/HighlightsNews/HighlightsNews';
 import SponsoredNews from '../../components/SponsoredNews/SponsoredNews';
 import HomeTest from '../../Code/HomepageSections';
-import { Channels } from './mods/components/channels';
-import { TokenCta } from './mods/components/token_cta';
+import { Channels } from './mods/components/Channels';
+import { TokenCta } from './mods/components/TokenCta';
 import { MemeWall } from './mods/components/memewall';
+import { TruthFirstReports } from './mods/components/TruthFirstReport';
+import { EnergyLaunchShield } from './mods/components/EnergyLaunchShield';
+import { PeopleDecide } from './mods/components/PeopleDecide';
+import { MemeticResistanceStore } from './mods/components/MemeticResistanceStore';
+import { DonationPage } from './mods/components/DonationPage';
+import { AboutTruthFirst } from './mods/components/AboutTruthFirst';
 
 const HomePage3 = () => {
     return (
@@ -28,6 +34,12 @@ const HomePage3 = () => {
                                 <Channels />
                                 <TokenCta />
                                 <MemeWall />
+                                <TruthFirstReports />
+                                <EnergyLaunchShield />
+                                <PeopleDecide />
+                                <MemeticResistanceStore />
+                                <DonationPage />
+                                <AboutTruthFirst />
 
                                 
 

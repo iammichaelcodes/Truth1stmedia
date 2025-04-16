@@ -50,7 +50,7 @@ const Sidebar = styled.div`
 `;
 
 const LargeMeme = styled(Sidebar)`
-  height: 100%;
+//   height: 70%;
 `;
 
 const MemeWallLayout = styled.div`
@@ -67,7 +67,7 @@ const RightColumn = styled.div`
   flex: 1;
 `;
 
-const MemeWall = () => {
+export const MemeWall = () => {
   return (
     <MemeWallWrapper>
       <MemeTitle>THE MEME WALL</MemeTitle>
@@ -112,7 +112,7 @@ const MemeWall = () => {
           </Sidebar>
 
           <LargeMeme>
-            <MemeImage style={{ height: "150px" }} />
+            <MemeImage style={{ height: "100px" }} />
             <p>
               Think you’ve got a meme worthy of Cazado status? Upload it, tag it,
               and let the community decide.
@@ -123,5 +123,3 @@ const MemeWall = () => {
     </MemeWallWrapper>
   );
 };
-
-export default MemeWall;

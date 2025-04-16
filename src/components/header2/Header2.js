@@ -31,7 +31,7 @@ const Header2 = (props) => {
                             </div>
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={Logo}
+                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img height={120} src="/images/truth_first_logo.png"
                                         alt="" /></Link>
                                 </div>
                             </div>
