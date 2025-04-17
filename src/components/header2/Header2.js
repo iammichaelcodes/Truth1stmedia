@@ -90,12 +90,21 @@ const Header2 = (props) => {
                                                 <span></span>
                                                 <span></span>
                                             </div> */}
-                                             <button
-                                                className="text-white p-2 hover:text-gray-300 font-medium  transition-colors duration-200"
-                                                style={{ background: 'black', border: '1px solid' }}
-                                            >
-                                                Connect Wallet 
-                                            </button>
+                                            <button
+                                        className="text-white p-2 font-medium transition-colors duration-200"
+                                        style={{
+                                            background: 'linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)',
+                                            border: '1px solid #2575fc',
+                                            borderRadius: '10px', // Rounded corners
+                                            padding: '12px 20px',
+                                            fontSize: '12px',
+                                            textTransform: 'uppercase',
+                                        }}
+                                        onMouseEnter={(e) => e.target.style.background = 'linear-gradient(45deg, #2575fc 0%, #6a11cb 100%)'}
+                                        onMouseLeave={(e) => e.target.style.background = 'linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)'}
+                                        >
+                                        Connect Wallet
+                                        </button>
                                             <div className={`header-right-menu-wrap ${rightMenuActive ? "right-menu-active" : ""}`}>
                                                 <button className="right-menu-close" onClick={() => setrightMenuState(!rightMenuActive)}><i className="ti-close"></i></button>
                                                 <div className="logo"><img src={Logo2} alt="" /></div>

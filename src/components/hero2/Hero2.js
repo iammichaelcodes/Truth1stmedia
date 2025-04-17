@@ -1,83 +1,67 @@
-import React from 'react'
-import { Navigation, Pagination, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import heroBlog from '../../api/heroBlogs'
-import { Link } from 'react-router-dom'
-import bgImage from './HeroBanner.png'
+import React from 'react';
+import styled from 'styled-components';
+import bgImage from './HeroBanner.png';
 
+const HeroSection = styled.section`
+  width: 100%;
+  position: relative;
+  z-index: 1;
+`;
 
-const Hero2 = (props) => {
-    return (
+const HeroBackground = styled.div`
+  background-image: url(${bgImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
 
-        <section className="wpo-hero-slider">
-            <div className="swiper-container">
-                {/* <div className="swiper-wrapper">
-                    <Swiper
-                        // install Swiper modules
-                        modules={[Navigation, Pagination, A11y]}
-                        spaceBetween={0}
-                        slidesPerView={1}
-                        pagination={{ clickable: true }}
-                        loop={true}
-                        speed={1800}
-                        parallax={true}
-                        navigation
-                    >
+  @media (max-width: 768px) {
+    min-height: auto;
+    padding: 3rem 1.5rem;
+  }
+`;
 
-                        {heroBlog.slice(4, 6).map((blog, bitem) => (
-                            <SwiperSlide key={bitem}>
-                                <div className="swiper-slide" style={{ backgroundImage: `url(${blog.screens})` }}>
-                                    <div className="slide-inner slide-bg-image"
-                                        data-background="assets/images/slider/slide-1.jpg">
-                                        <div className="slide-content">
-                                            <div data-swiper-parallax="300" className="slide-title">
-                                                <h2><Link to={`/hero-blog-single/${blog.slug}`}>{blog.title}</Link></h2>
-                                            </div>
-                                            <div data-swiper-parallax="400" className="slide-text">
-                                                <p>{blog.description}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="thumb">{blog.thumb}</div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
+const HeroContent = styled.div`
+  max-width: 800px;
+  color: #fff;
+`;
 
-                        ...
-                    </Swiper>
+const HeroTitle = styled.h2`
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+`;
 
-                </div> */}
-                <div className="hero-container" style={{
-                    backgroundImage: `url(${bgImage})`,  // Replace with your image path
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    height: '90vh',
-                    width: '100%',
-                    position: 'relative'
-                }}>
-                    <div className="slide-content" style={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        textAlign: 'center',
-                        color: '#fff'
-                    }}>
-                        <div className="slide-title">
-                            <h2>SATIRE MEETS SUBSTANCE</h2>
-                        </div>
-                        <div className="slide-text">
-                            <p>Cutting-edge satire exposing corruption and Idiocy across the political spectrum, fueled by the community and crypto.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
-}
+const HeroText = styled.p`
+  font-size: 1.2rem;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
+const Hero2 = () => {
+  return (
+    <HeroSection>
+      <HeroBackground>
+        <HeroContent>
+          <HeroTitle>SATIRE MEETS SUBSTANCE.</HeroTitle>
+          <HeroText>
+            Cutting-edge satire exposing corruption and idiocy across the political spectrum, fueled by the community and crypto.
+          </HeroText>
+        </HeroContent>
+      </HeroBackground>
+    </HeroSection>
+  );
+};
 
 export default Hero2;

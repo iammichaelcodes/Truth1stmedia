@@ -21,24 +21,29 @@ const FaceIconSVG = ({ size = '100%', style = {} }) => (
 
 // --- Styled Components ---
 
-const SocialLinksContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+const Container = styled.div`
   padding: 2rem 1rem;
-  margin-top: 100px;
   background-color: #f5f0e1;
-  gap: 2rem;
+`;
+
+const SocialLinks = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 
   @media (max-width: 600px) {
     flex-direction: column;
-    gap: 1.25rem;
+    align-items: center;  /* Centering items horizontally */
+    justify-content: flex-start;  /* Aligning items at the top of the container */
+    gap: 1rem;
+    width: 100%;  /* Ensuring that the container takes full width */
   }
+
 `;
 
 const SocialLinkItem = styled.a`
-  display: inline-flex;
+  display: flex;
   align-items: center;
   text-decoration: none;
   color: #1e2a33;
@@ -50,7 +55,7 @@ const SocialLinkItem = styled.a`
 `;
 
 const IconCircle = styled.span`
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
@@ -82,27 +87,29 @@ const LinkText = styled.span`
 
 export const Channels = () => {
   return (
-    <SocialLinksContainer>
-      <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
-        <IconCircle>
-          <DollarIconSVG />
-        </IconCircle>
-        <LinkText>@TheAntiShifty</LinkText>
-      </SocialLinkItem>
+    <Container>
+      <SocialLinks>
+        <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
+          <IconCircle>
+            <DollarIconSVG />
+          </IconCircle>
+          <LinkText>@TheAntiShifty</LinkText>
+        </SocialLinkItem>
 
-      <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
-        <IconCircle>
-          <FaceIconSVG />
-        </IconCircle>
-        <LinkText>AMemeSenseMD</LinkText>
-      </SocialLinkItem>
+        <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
+          <IconCircle>
+            <FaceIconSVG />
+          </IconCircle>
+          <LinkText>AMemeSenseMD</LinkText>
+        </SocialLinkItem>
 
-      <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
-        <IconCircle>
-          <DollarIconSVG />
-        </IconCircle>
-        <LinkText>@CazoAntiShiftyES</LinkText>
-      </SocialLinkItem>
-    </SocialLinksContainer>
+        <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
+          <IconCircle>
+            <DollarIconSVG />
+          </IconCircle>
+          <LinkText>@CazoAntiShiftyES</LinkText>
+        </SocialLinkItem>
+      </SocialLinks>
+    </Container>
   );
 };
