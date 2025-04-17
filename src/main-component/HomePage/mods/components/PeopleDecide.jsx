@@ -197,11 +197,12 @@ export const PeopleDecide = () => {
         <Title>The People Decide</Title>
         <Subtitle>Real power. Real accountability. Vote with $ANTY and shape the movement.</Subtitle>
       </Header>
-      
+
       <ConnectWalletContainer>
-        <ConnectButton>Connect Wallet</ConnectButton>
+        {/* <ConnectButton>Connect Wallet</ConnectButton> */}
+        <button className="mb-4 btn btn-dark">Connect Wallet</button>
       </ConnectWalletContainer>
-      
+
       {/* Proposal 1 */}
       <ProposalCard>
         <IconContainer>
@@ -209,12 +210,12 @@ export const PeopleDecide = () => {
             <CheckIcon />
           </Icon>
         </IconContainer>
-        
+
         <ProposalContent>
           <ProposalTitle>Proposal: Shifty of the Week</ProposalTitle>
           <ProposalDescription>Who should be Shifty of the Week?</ProposalDescription>
           <VotingEnds>Voting Ends: Friday 9PM EST</VotingEnds>
-          
+
           <ResultsContainer>
             <ResultsLabel>
               <span>Current Results:</span>
@@ -223,12 +224,12 @@ export const PeopleDecide = () => {
             <ProgressBar value={31} />
           </ResultsContainer>
         </ProposalContent>
-        
+
         <ButtonContainer>
           <ViewVoteButton>View & Vote</ViewVoteButton>
         </ButtonContainer>
       </ProposalCard>
-      
+
       {/* Proposal 2 */}
       <ProposalCard>
         <IconContainer>
@@ -236,11 +237,11 @@ export const PeopleDecide = () => {
             <SearchIcon />
           </Icon>
         </IconContainer>
-        
+
         <ProposalContent>
           <ProposalTitle>Proposal: Should we investigate [issue]?</ProposalTitle>
           <VotingEnds>Voting Ends: Friday 9PM EST</VotingEnds>
-          
+
           <ResultsContainer>
             <ResultsLabel>
               <span>Current Results:</span>
@@ -248,7 +249,7 @@ export const PeopleDecide = () => {
             </ResultsLabel>
             <ProgressBar value={60} />
           </ResultsContainer>
-          
+
           <ResultsContainer>
             <ResultsLabel>
               <span>No</span>
@@ -257,12 +258,12 @@ export const PeopleDecide = () => {
             <ProgressBar value={40} />
           </ResultsContainer>
         </ProposalContent>
-        
+
         <ButtonContainer>
           <ViewVoteButton>View & Vote</ViewVoteButton>
         </ButtonContainer>
       </ProposalCard>
-      
+
       {/* Proposal 3 */}
       <ProposalCard>
         <IconContainer>
@@ -270,11 +271,11 @@ export const PeopleDecide = () => {
             <TshirtIcon />
           </Icon>
         </IconContainer>
-        
+
         <ProposalContent>
           <ProposalTitle>Proposal: Which merch design should we drop?</ProposalTitle>
           <VotingEnds>Voting Ends: Friday 9PM EST</VotingEnds>
-          
+
           <ResultsContainer>
             <ResultsLabel>
               <span>Option A</span>
@@ -282,7 +283,7 @@ export const PeopleDecide = () => {
             </ResultsLabel>
             <ProgressBar value={15} />
           </ResultsContainer>
-          
+
           <ResultsContainer>
             <ResultsLabel>
               <span>Option B</span>
@@ -291,12 +292,12 @@ export const PeopleDecide = () => {
             <ProgressBar value={13} />
           </ResultsContainer>
         </ProposalContent>
-        
+
         <ButtonContainer>
           <ViewVoteButton>View & Vote</ViewVoteButton>
         </ButtonContainer>
       </ProposalCard>
-      
+
       {/* Footer Card */}
       <FooterCard>
         <FooterText>Want to propose a Shifty target or investigation?</FooterText>

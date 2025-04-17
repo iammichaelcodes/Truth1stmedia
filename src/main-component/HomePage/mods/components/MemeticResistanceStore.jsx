@@ -172,14 +172,16 @@ export const MemeticResistanceStore = () => {
     <Container>
       <MainTitle>Merch for the memetic resistance</MainTitle>
       <Subtitle>Unlock exclusive gear. Rep the revolution. Powered by $ANTY.</Subtitle>
-      
+
       <ConnectButton>Connect Wallet</ConnectButton>
-      
+
+      {/* <button className="mb-4 btn btn-dark">Connect Wallet</button> */}
+
       <SectionTitle>Holding $ANTY comes with perks</SectionTitle>
       <HolderBenefits>
         Basic holders get 10% off. VIPs unlock secret gear. Every purchase funds the movement.
       </HolderBenefits>
-      
+
       <SectionTitle>ANTY Holder Perks</SectionTitle>
       <HolderTiers>
         <TierCard>
@@ -190,7 +192,7 @@ export const MemeticResistanceStore = () => {
             <TierBenefit>10% discount</TierBenefit>
           </TierDetails>
         </TierCard>
-        
+
         <TierCard>
           <TierIcon bgColor="#a01010">⚡</TierIcon>
           <TierDetails>
@@ -200,7 +202,7 @@ export const MemeticResistanceStore = () => {
           </TierDetails>
         </TierCard>
       </HolderTiers>
-      
+
       <FilterSection>
         <FilterButton>@CazoPendejoss</FilterButton>
         <FilterButton>@MemeSenseMD</FilterButton>
@@ -209,7 +211,7 @@ export const MemeticResistanceStore = () => {
           <FilterButton>Drop Date ▾</FilterButton>
         </SortSelect>
       </FilterSection>
-      
+
       <SectionTitle>Merch for the holder</SectionTitle>
       <MerchGrid>
         <MerchItem>
@@ -220,7 +222,7 @@ export const MemeticResistanceStore = () => {
           <MerchPrice>$5.00</MerchPrice>
           <ViewButton>View</ViewButton>
         </MerchItem>
-        
+
         <MerchItem>
           <MerchImage>
             <svg width="60" height="60" viewBox="0 0 24 24" fill="#666">
@@ -231,7 +233,7 @@ export const MemeticResistanceStore = () => {
           <MerchPrice>$20.00</MerchPrice>
           <ViewButton>View</ViewButton>
         </MerchItem>
-        
+
         <MerchItem>
           <MerchImage>
             <svg width="60" height="60" viewBox="0 0 24 24" fill="#666">
@@ -242,7 +244,7 @@ export const MemeticResistanceStore = () => {
           <MerchPrice>$25.00</MerchPrice>
           <ViewButton>View</ViewButton>
         </MerchItem>
-        
+
         <MerchItem>
           <MerchImage>
             <svg width="60" height="60" viewBox="0 0 24 24" fill="#666">

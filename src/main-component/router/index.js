@@ -4,7 +4,9 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 import Homepage from '../HomePage/HomePage'
 import ContactPage from '../ContactPage/ContactPage';
-import ErrorPage from '../ErrorPage/ErrorPage';;
+import ErrorPage from '../ErrorPage/ErrorPage';
+import { ReportPage } from '../HomePage/mods/new pages/Report';
+;
 
 
 
@@ -14,10 +16,11 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="home" element={<Homepage />} />
           <Route path='404' element={<ErrorPage />} />
           <Route path='contact' element={<ContactPage />} />
+          <Route path='report' element={<ReportPage />} />
         </Routes>
       </BrowserRouter>
 

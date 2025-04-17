@@ -1,96 +1,90 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// --- SVG Icons ---
+// --- Image Icon Components ---
 
-// Dollar Sign SVG (Approximation)
-const DollarIconSVG = ({ size = '145%', color = 'currentColor', ...props }) => (
+const DollarIconSVG = ({ size = '100%', style = {} }) => (
   <img
-    width={size}
-    height={size}
     src="/images/anti_shify.png"
-    viewBox="0 0 16 16" // ViewBox might need adjustment based on actual SVG
-    fill={color}
-    
-    style={{ display: 'block', ...props.style }} // display: block helps remove extra space
-  >
-    {/* Example Path - Replace with your actual accurate SVG path */}
-   
-  </img>
+    alt="Dollar Icon"
+    style={{ width: size, height: size, display: 'block', ...style }}
+  />
 );
 
-// Face/Meme Icon SVG (Approximation)
-const FaceIconSVG = ({ size = '120%', color = 'currentColor', ...props }) => (
-  
+const FaceIconSVG = ({ size = '100%', style = {} }) => (
   <img
-    width={size}
-    height={size}
     src="/images/icon2-removebg-preview.png"
-    viewBox="0 0 16 16" // ViewBox might need adjustment based on actual SVG
-    fill={color}
-    
-    style={{ display: 'block', ...props.style }} // display: block helps remove extra space
-  >
-    {/* Example Path - Replace with your actual accurate SVG path */}
-   
-  </img>
-   
+    alt="Face Icon"
+    style={{ width: size, height: size, display: 'block', ...style }}
+  />
 );
-
 
 // --- Styled Components ---
 
 const SocialLinksContainer = styled.div`
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Vertically align items */
-  padding: 1rem 2rem; /* Padding around the container */
-  margin-top:100px;
-  background-color: #f5f0e1; /* Light background color from image */
-  gap: 2rem 2.5rem; /* Row gap and Column gap */
-  min-height: 60px; /* Give it some min height */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin-top: 100px;
+  background-color: #f5f0e1;
+  gap: 2rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
 `;
 
-const SocialLinkItem = styled.a` /* Use an anchor tag for links */
-  display: inline-flex; /* Use inline-flex to keep icon and text together */
-  align-items: center; /* Vertically align icon and text */
-  text-decoration: none; /* Remove default link underline */
-  color: #1e2a33; /* Dark text color from image */
+const SocialLinkItem = styled.a`
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1e2a33;
   transition: opacity 0.2s ease-in-out;
 
   &:hover {
-    opacity: 0.8; /* Slight hover effect */
+    opacity: 0.8;
   }
 `;
 
 const IconCircle = styled.span`
-  display: inline-flex; /* Use flex to center the SVG inside */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px; /* Adjust size as needed */
-  height: 40px;
-  border-radius: 50%; /* Make it a circle */
-  background-color: #1e2a33; /* Dark background for the circle */
-  color: #e0d9c7; /* Light color for the icon SVG inside */
-  margin-right: 0.75rem; /* Space between icon and text */
-  flex-shrink: 0; /* Prevent icon from shrinking */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #1e2a33;
+  color: #e0d9c7;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+
+  @media (max-width: 600px) {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+  }
 `;
 
 const LinkText = styled.span`
-  font-size: 1rem; /* Adjust font size as needed */
-  font-weight: 500; /* Slightly bold */
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 1.2;
+
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+  }
 `;
 
-// --- React Component ---
+// --- Component ---
 
 export const Channels = () => {
   return (
     <SocialLinksContainer>
       <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
         <IconCircle>
-          {/* Adjust size prop passed to SVG if needed */}
           <DollarIconSVG />
         </IconCircle>
         <LinkText>@TheAntiShifty</LinkText>
@@ -112,5 +106,3 @@ export const Channels = () => {
     </SocialLinksContainer>
   );
 };
-
-// export default SocialLinksBar;

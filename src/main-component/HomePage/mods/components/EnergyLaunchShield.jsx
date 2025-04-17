@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   max-width: 800px;
   margin: 30px auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+ 
   border: 3px solid #000;
   border-radius: 0;
   background-color: white;
@@ -27,15 +27,15 @@ const Logo = styled.div`
 // Shield SVG Icon with black border and light fill
 const ShieldIcon = () => (
   <svg width="60" height="70" viewBox="0 0 60 70" fill="none" stroke="black" strokeWidth="2">
-    <path d="M5 10 L30 3 L55 10 L55 35 C55 50 30 65 30 65 C30 65 5 50 5 35 Z" fill="#f0f0f0"/>
+    <path d="M5 10 L30 3 L55 10 L55 35 C55 50 30 65 30 65 C30 65 5 50 5 35 Z" fill="#f0f0f0" />
   </svg>
 );
 
 // Improved Check Icon
 const CheckIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <circle cx="12" cy="12" r="10" stroke="black" fill="none"/>
-    <polyline points="8 12 11 15 16 9" stroke="black"/>
+    <circle cx="12" cy="12" r="10" stroke="black" fill="none" />
+    <polyline points="8 12 11 15 16 9" stroke="black" />
   </svg>
 );
 
@@ -208,7 +208,7 @@ const SectionTitle = styled.div`
 export const EnergyLaunchShield = () => {
   // Sample chart data for visualization
   const chartPoints = [10, 12, 8, 15, 12, 20, 18, 25];
-  
+
   return (
     <Container>
       <Header>
@@ -220,7 +220,7 @@ export const EnergyLaunchShield = () => {
           <p>Protecting the mission. Guarding the truth.</p>
         </HeaderText>
       </Header>
-      
+
       <GridContainer>
         <Grid>
           {/* Governance Shield Panel */}
@@ -232,18 +232,18 @@ export const EnergyLaunchShield = () => {
                 <Progress value={96} />
                 <Score>96</Score>
               </div>
-              
+
               <div>
                 <SectionTitle>Recent Governance Votes</SectionTitle>
                 <ListItem><em>Shifty of the Week</em></ListItem>
                 <ListItem>Investigate SMRC</ListItem>
                 <ListItem>Release ESG Report</ListItem>
               </div>
-              
+
               <ViewAll>View All</ViewAll>
             </PanelContent>
           </Panel>
-          
+
           {/* Submission Firewall Panel */}
           <Panel>
             <PanelTitle>Submission Firewall</PanelTitle>
@@ -252,23 +252,23 @@ export const EnergyLaunchShield = () => {
                 <div>Total Submissions</div>
                 <div>3,504</div>
               </DataRow>
-              
+
               <DataRow bordered>
                 <div>Marked as Spam</div>
                 <div>120</div>
               </DataRow>
-              
+
               <DataRow bordered>
                 <div>Blocked</div>
                 <div>39</div>
               </DataRow>
-              
+
               <WalletSection>
                 <DataRow noPadding>
                   <div>Wallet:</div>
                   <WalletAddress>M1/XL...JNp0</WalletAddress>
                 </DataRow>
-                
+
                 <div style={{ marginTop: '10px' }}>
                   <SectionTitle>Actions</SectionTitle>
                   <CheckboxItem>
@@ -287,7 +287,7 @@ export const EnergyLaunchShield = () => {
               </WalletSection>
             </PanelContent>
           </Panel>
-          
+
           {/* Listing Guard Panel */}
           <Panel>
             <PanelTitle>Listing Guard</PanelTitle>
@@ -295,20 +295,20 @@ export const EnergyLaunchShield = () => {
               <div>
                 <SectionTitle>Circulating Supply</SectionTitle>
                 <Score style={{ fontSize: '36px' }}>101.5M ANTY</Score>
-                
+
                 <ChartContainer>
                   <SimpleChart>
                     {chartPoints.map((point, index) => (
-                      <div 
-                        key={index} 
-                        className="line" 
-                        style={{ height: `${point}px` }} 
+                      <div
+                        key={index}
+                        className="line"
+                        style={{ height: `${point}px` }}
                       />
                     ))}
                   </SimpleChart>
                 </ChartContainer>
               </div>
-              
+
               <StatusBox>
                 <StatusCell>Anti-Bot Status</StatusCell>
                 <StatusCell right>
@@ -318,7 +318,7 @@ export const EnergyLaunchShield = () => {
               </StatusBox>
             </PanelContent>
           </Panel>
-          
+
           {/* Community Trust Panel */}
           <Panel>
             <PanelTitle>Community Trust</PanelTitle>
@@ -327,22 +327,22 @@ export const EnergyLaunchShield = () => {
                 <div>Wallet</div>
                 <div>Score</div>
               </DataRow>
-              
+
               <DataRow bordered>
                 <WalletAddress>F1/K ....xA34</WalletAddress>
                 <div>90</div>
               </DataRow>
-              
+
               <DataRow bordered>
                 <WalletAddress>T4yP ....hE57</WalletAddress>
                 <div>84</div>
               </DataRow>
-              
+
               <DataRow bordered>
                 <WalletAddress>Q6oV ....mLu9</WalletAddress>
                 <div>82</div>
               </DataRow>
-              
+
               <DataRow>
                 <WalletAddress>C2jN ....nW84</WalletAddress>
                 <div>80</div>
