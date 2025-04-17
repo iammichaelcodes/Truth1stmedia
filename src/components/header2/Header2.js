@@ -60,7 +60,7 @@ const Header2 = (props) => {
                                         <li><Link onClick={ClickHandler} to="/about">About</Link></li>
                                         <li><Link onClick={ClickHandler} to="/anty-ecosystem">Anty Ecosystem</Link></li>
                                         <li><Link onClick={ClickHandler} to="/merch-store">Merch Store</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
+                                        {/* <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li> */}
                                         <li><Link onClick={ClickHandler} to="/dao">Dao</Link></li>
                                         <li><Link onClick={ClickHandler} to="/report">Reports</Link></li>
                                         {/* <button className="h-1 mb-4 btn btn-dark">Connect Wallet</button> */}
