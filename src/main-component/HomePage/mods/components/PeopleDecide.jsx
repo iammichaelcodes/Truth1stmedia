@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Main container with light gray background
 const Container = styled.div`
   max-width: 800px;
-  margin: 30px auto;
+  margin:  auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   padding: 20px;
   background-color: #f0f0f0;

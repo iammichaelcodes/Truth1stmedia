@@ -93,7 +93,7 @@ const MemeCard = styled(StyledCard)`
   grid-row: 1 / 2; /* Start row 1, end before row 2 */
 
   /* --- IMPORTANT: Replace with your actual image path --- */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/meme-background.jpg');
+  background-image:  url('/images/showusyourmemes.png');
   background-size: cover;
   background-position: center;
   justify-content: center; /* Center content vertically */
@@ -241,7 +241,7 @@ export const TokenCta = () => {
       {/* Card 1: Meme */}
       <MemeCard>
         {/* Content already centered by styled component */}
-        <h2>SHOW US<br />YOUR MEMES</h2>
+        {/* <h2>SHOW US<br />YOUR MEMES</h2> */}
       </MemeCard>
 
       {/* Stacking container for top-right */}
