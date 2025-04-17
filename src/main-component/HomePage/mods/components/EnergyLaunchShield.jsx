@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Main container with proper border and padding
 const Container = styled.div`
   max-width: 800px;
-  margin: 30px auto;
+  margin: 2px auto;
  
   border: 3px solid #000;
   border-radius: 0;

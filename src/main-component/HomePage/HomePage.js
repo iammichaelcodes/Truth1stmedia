@@ -34,14 +34,14 @@ const HomePage3 = () => {
                                 <Channels />
                                 <TokenCta />
                                 <MemeWall />
-                                <TruthFirstReports />
-                                <EnergyLaunchShield />
+                                {/* <TruthFirstReports />
+                                <EnergyLaunchShield /> */}
                                 <PeopleDecide />
-                                <MemeticResistanceStore />
+                                {/* <MemeticResistanceStore /> */}
                                 <DonationPage />
-                                <AboutTruthFirst />
+                                {/* <AboutTruthFirst /> */}
 
-                                
+
 
 
 
