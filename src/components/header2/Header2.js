@@ -63,8 +63,8 @@ const Header2 = (props) => {
                                         {/* <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li> */}
                                         <li><Link onClick={ClickHandler} to="/dao">Dao</Link></li>
                                         <li><Link onClick={ClickHandler} to="/report">Reports</Link></li>
-                                        {/* <button className="h-1 mb-4 btn btn-dark">Connect Wallet</button> */}
                                     </ul>
+                                    <button className="h-1 mb-4 btn btn-dark">Connect Wallet</button>
                                 </div>
                             </div>
                             <div className="col-lg-2 col-md-2 col-2">

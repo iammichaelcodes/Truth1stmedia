@@ -38,7 +38,7 @@ const HomePage3 = () => {
                                 <EnergyLaunchShield /> */}
                                 <PeopleDecide />
                                 {/* <MemeticResistanceStore /> */}
-                                <DonationPage />
+                                {/* <DonationPage /> */}
                                 {/* <AboutTruthFirst /> */}
 
 
