@@ -39,38 +39,36 @@ const Header2 = (props) => {
                                 <div id="navbar" className="collapse navbar-collapse navigation-holder">
                                     <button className="menu-close"><i className="ti-close"></i></button>
                                     <ul className="mb-2 nav navbar-nav mb-lg-0">
-                                        <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Home</Link>
-                                            {/*  <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/home">Home style 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home2">Home style 2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home3">Home style 3</Link></li>
-                                            </ul> */}
-                                        </li>
-                                        {/* <li className="menu-item-has-children">
-                                            <Link to="#">Pages</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/blog">Archive</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/contact">Contact Us</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
+    <li className="menu-item-has-children">
+        <Link onClick={ClickHandler} to="/">Home</Link>
+    </li>
+    <li><Link onClick={ClickHandler} to="/about">About</Link></li>
+    <li>  <a
+    href="https://www.antishifty.com"
+    target="_blank"
+    rel="noopener noreferrer" 
+  >
+   Anty Ecosystem
+  </a> </li>
+    <li><Link onClick={ClickHandler} to="/merch-store">Merch Store</Link></li>
+    <li><Link onClick={ClickHandler} to="/dao">Dao</Link></li>
+    <li><Link onClick={ClickHandler} to="/report">Reports</Link></li>
+    <li><Link onClick={ClickHandler} to="/donations">Donations</Link></li>
 
+    {/* Make Connect Wallet look like the other nav links */}
+  
 
-                                            </ul>
-                                        </li> */}
-                                        <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/anty-ecosystem">Anty Ecosystem</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/merch-store">Merch Store</Link></li>
-                                        {/* <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li> */}
-                                        <li><Link onClick={ClickHandler} to="/dao">Dao</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/report">Reports</Link></li>
-                                    </ul>
-                                    <button className="h-1 mb-4 btn btn-dark">Connect Wallet</button>
+</ul>
+
                                 </div>
                             </div>
                             <div className="col-lg-2 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="header-search-form-wrapper">
                                         <div className="cart-search-contact">
+                           
+                                           
+
                                             <button onClick={() => setMenuState(!menuActive)} className="search-toggle-btn"><i
                                                 className={`fi ti-search ${menuActive ? "ti-close" : "fi "}`}></i></button>
                                             <div className={`header-search-form ${menuActive ? "header-search-content-toggle" : ""}`}>
@@ -85,13 +83,28 @@ const Header2 = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="header-right-menu-wrapper">
-                                        <div className="header-right-menu">
-                                            <div className="right-menu-toggle-btn" onClick={() => setrightMenuState(!rightMenuActive)}>
+                                    <div className="header-right-menu-wrapper ">
+                                        <div className="header-right-menu d-flex">
+                                            {/* <div className="right-menu-toggle-btn" onClick={() => setrightMenuState(!rightMenuActive)}>
                                                 <span></span>
                                                 <span></span>
                                                 <span></span>
-                                            </div>
+                                            </div> */}
+                                            <button
+                                        className="text-white p-2 font-medium transition-colors duration-200"
+                                        style={{
+                                            background: 'linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)',
+                                            border: '1px solid #2575fc',
+                                            borderRadius: '10px', // Rounded corners
+                                            padding: '12px 20px',
+                                            fontSize: '12px',
+                                            textTransform: 'uppercase',
+                                        }}
+                                        onMouseEnter={(e) => e.target.style.background = 'linear-gradient(45deg, #2575fc 0%, #6a11cb 100%)'}
+                                        onMouseLeave={(e) => e.target.style.background = 'linear-gradient(45deg, #6a11cb 0%, #2575fc 100%)'}
+                                        >
+                                        Connect Wallet
+                                        </button>
                                             <div className={`header-right-menu-wrap ${rightMenuActive ? "right-menu-active" : ""}`}>
                                                 <button className="right-menu-close" onClick={() => setrightMenuState(!rightMenuActive)}><i className="ti-close"></i></button>
                                                 <div className="logo"><img src={Logo2} alt="" /></div>

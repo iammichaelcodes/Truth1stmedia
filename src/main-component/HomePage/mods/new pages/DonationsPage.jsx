@@ -1,11 +1,10 @@
 
 import React, { Fragment } from 'react';
 import Navbar2 from '../../../../components/Navbar2/Navbar2';
-import { AboutTruthFirst } from '../components/AboutTruthFirst';
+import { DonationPage } from '../components/DonationPage';
 import Footer from '../../../../components/footer/Footer';
 
-
-export const AboutTruthFirstPage = () => {
+export const DonationsScreen= () => {
     return (
         <Fragment>
             <div className="page-wrappers dark-mode">
@@ -14,7 +13,7 @@ export const AboutTruthFirstPage = () => {
                     <div className="container">
                         <div className="row justify-content-center"> {/* <== centers the column */}
                             <div className="text-center col-lg-9">     {/* <== center text inside */}
-                                <AboutTruthFirst />
+                                <DonationPage />
                             </div>
                         </div>
                     </div>

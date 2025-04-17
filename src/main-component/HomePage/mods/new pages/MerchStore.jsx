@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react';
 import Navbar2 from '../../../../components/Navbar2/Navbar2';
 import { MemeticResistanceStore } from '../components/MemeticResistanceStore';
+import Footer from '../../../../components/footer/Footer';
 
 export const MerchStorePage = () => {
     return (
@@ -19,8 +20,8 @@ export const MerchStorePage = () => {
                 </div>
                 {/* <SponsoredNews />
           <Subscribe />
-          <Footer />
           <Scrollbar /> */}
+          <Footer />
             </div>
         </Fragment>
     );
