@@ -78,7 +78,7 @@ const Footer = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="wpo-lower-footer">
+            {/* <div className="wpo-lower-footer">
                 <div className="container">
                     <div className="row">
                         <div className="col col-xs-12">
@@ -87,7 +87,7 @@ const Footer = (props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </footer>
     )
 }
