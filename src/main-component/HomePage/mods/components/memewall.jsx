@@ -10,6 +10,10 @@ const MemeTitle = styled.h1`
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -30,6 +34,14 @@ const MemeCard = styled.div`
   text-align: center;
   flex: 1 0 calc(33.333% - 1rem);
   min-width: 150px;
+
+  @media (max-width: 992px) {
+    flex: 1 0 calc(50% - 1rem);
+  }
+
+  @media (max-width: 576px) {
+    flex: 1 0 100%;
+  }
 `;
 
 const MemeImage = styled.div`
@@ -50,21 +62,33 @@ const Sidebar = styled.div`
 `;
 
 const LargeMeme = styled(Sidebar)`
-//   height: 70%;
+  /* Custom styles if needed */
 `;
 
 const MemeWallLayout = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const LeftColumn = styled.div`
   flex: 2;
+
+  @media (max-width: 768px) {
+    flex: 1;
+  }
 `;
 
 const RightColumn = styled.div`
   flex: 1;
+
+  @media (max-width: 768px) {
+    flex: 1;
+  }
 `;
 
 export const MemeWall = () => {
@@ -76,7 +100,7 @@ export const MemeWall = () => {
       </Subtitle>
       <MemeWallLayout>
         <LeftColumn>
-          <button className="btn btn-dark mb-4">Submit Your Meme</button>
+          <button className="mb-4 btn btn-dark">Submit Your Meme</button>
           <MemeGrid>
             {[...Array(15)].map((_, i) => (
               <MemeCard key={i}>
@@ -101,7 +125,7 @@ export const MemeWall = () => {
               <input className="form-check-input" type="radio" name="vote" id="candidateC" />
               <label className="form-check-label" htmlFor="candidateC">Candidate C</label>
             </div>
-            <button className="btn btn-dark mt-2">Vote Now</button>
+            <button className="mt-2 btn btn-dark">Vote Now</button>
           </Sidebar>
 
           <Sidebar>

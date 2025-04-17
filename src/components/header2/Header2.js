@@ -47,7 +47,7 @@ const Header2 = (props) => {
                                                 <li><Link onClick={ClickHandler} to="/home3">Home style 3</Link></li>
                                             </ul> */}
                                         </li>
-                                        <li className="menu-item-has-children">
+                                        {/* <li className="menu-item-has-children">
                                             <Link to="#">Pages</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/blog">Archive</Link></li>
@@ -56,31 +56,15 @@ const Header2 = (props) => {
 
 
                                             </ul>
-                                        </li>
-                                        <li><Link onClick={ClickHandler} to="/lifestyle">Lifestyle</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/foods">Foods</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/business">Business</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/travels">Travel</Link></li>
-                                        {/*     <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/blog">Blog</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/blog">Blog right sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/blog-left-sidebar">Blog left sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/blog-fullwidth">Blog fullwidth</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/">Blog details</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/blog-single/Visiting-Bethany">Blog details right sidebar</Link>
-                                                        </li>
-                                                        <li><Link onClick={ClickHandler} to="/blog-single-left-sidebar/Visiting-Bethany">Blog details left
-                                                            sidebar</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/blog-single-fullwidth/Visiting-Bethany">Blog details
-                                                            fullwidth</Link></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
                                         </li> */}
+                                        <li><Link onClick={ClickHandler} to="/about">About</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/anty-ecosystem">Anty Ecosystem</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/merch-store">Merch Store</Link></li>
+                                        {/* <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li> */}
+                                        <li><Link onClick={ClickHandler} to="/dao">Dao</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/report">Reports</Link></li>
                                     </ul>
+                                    <button className="h-1 mb-4 btn btn-dark">Connect Wallet</button>
                                 </div>
                             </div>
                             <div className="col-lg-2 col-md-2 col-2">
