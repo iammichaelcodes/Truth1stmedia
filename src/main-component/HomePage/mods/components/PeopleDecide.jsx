@@ -6,7 +6,7 @@ const Container = styled.div`
   max-width: 800px;
   margin:  auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  padding: 20px;
+  padding: 40px;
   background-color: #f0f0f0;
 `;
 
@@ -34,7 +34,7 @@ const Subtitle = styled.p`
 const ConnectWalletContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin: 30px 0;
+  margin: 10px 0;
 `;
 
 const ConnectButton = styled.button`
@@ -81,6 +81,7 @@ const ProposalTitle = styled.h2`
   font-size: 22px;
   margin: 0 0 10px;
   font-weight: bold;
+  color:black;
 `;
 
 const ProposalDescription = styled.p`
@@ -124,6 +125,9 @@ const ProgressBar = styled.div`
 
 const ButtonContainer = styled.div`
   display: flex;
+  align-items:flex-end;
+  padding-left: 10px;
+
   justify-content: flex-end;
 `;
 
@@ -135,8 +139,9 @@ const ViewVoteButton = styled.button`
   display:flex;
   justify-content:center;
   align-items:center;
+  color: white;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: black;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -200,7 +205,7 @@ export const PeopleDecide = () => {
 
       <ConnectWalletContainer>
         {/* <ConnectButton>Connect Wallet</ConnectButton> */}
-        <button className="mb-4 btn btn-dark">Connect Wallet</button>
+        <button className="mb-2 btn btn-dark">Connect Wallet</button>
       </ConnectWalletContainer>
 
       {/* Proposal 1 */}
@@ -212,11 +217,11 @@ export const PeopleDecide = () => {
         </IconContainer>
 
         <ProposalContent>
-          <ProposalTitle>Proposal: Shifty of the Week</ProposalTitle>
+          <ProposalTitle> <h2 style={{color: 'black'}}>Proposal: Shifty of the Week </h2></ProposalTitle>
           <ProposalDescription>Who should be Shifty of the Week?</ProposalDescription>
           <VotingEnds>Voting Ends: Friday 9PM EST</VotingEnds>
 
-          <ResultsContainer>
+          <ResultsContainer> 
             <ResultsLabel>
               <span>Current Results:</span>
               <span>31%</span>
@@ -239,7 +244,7 @@ export const PeopleDecide = () => {
         </IconContainer>
 
         <ProposalContent>
-          <ProposalTitle>Proposal: Should we investigate [issue]?</ProposalTitle>
+          <ProposalTitle><h2 style={{color: 'black'}}>Proposal: Should we investigate [issue]?</h2></ProposalTitle>
           <VotingEnds>Voting Ends: Friday 9PM EST</VotingEnds>
 
           <ResultsContainer>
@@ -273,7 +278,7 @@ export const PeopleDecide = () => {
         </IconContainer>
 
         <ProposalContent>
-          <ProposalTitle>Proposal: Which merch design should we drop?</ProposalTitle>
+          <ProposalTitle><h2 style={{color: 'black'}}>Proposal: Which merch design should we drop?</h2></ProposalTitle>
           <VotingEnds>Voting Ends: Friday 9PM EST</VotingEnds>
 
           <ResultsContainer>

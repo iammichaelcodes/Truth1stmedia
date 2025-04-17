@@ -6,10 +6,10 @@ import styled from 'styled-components';
 const PageWrapper = styled.div`
   max-width: 900px; /* Adjust max-width as needed */
   margin: 0 auto; /* Center the content */
-  padding: 2rem 1rem;
+  padding: 3rem 2rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Example font stack */
-  color: #212529; /* Default text color */
-  background-color: #ffffff; /* Assuming white background */
+  
+  background-color: whitesmoke
 `;
 
 const Header = styled.h1`
@@ -109,6 +109,7 @@ const Divider = styled.hr`
 const TiersSectionTitle = styled.h2`
   font-size: 1.75rem;
   font-weight: bold;
+  color: red;
   text-align: center;
   margin-bottom: 2.5rem;
 `;
@@ -131,6 +132,7 @@ const TierCard = styled.div`
 const TierTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: bold;
+  color: #000000;
   margin-bottom: 0.5rem;
 `;
 
@@ -169,28 +171,7 @@ const TierPerkItem = styled.li`
   }
 `;
 
-// --- SVGs (Inline or imported) ---
-// Replace with your actual SVGs. These are basic placeholders.
 
-const BtcIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" width="40" height="40">
-    <path d="M20.2 3.8c-1.6-.8-3.6-.9-5.4-.4-.9.3-1.8.8-2.5 1.4-1.1.9-1.9 2.2-2.3 3.5-.2.7-.2 1.5-.1 2.2.2.9.6 1.8 1.1 2.5l-6.4 6.4c-.4.4-.5 1.1-.1 1.5l1.9 1.9c.4.4 1.1.5 1.5.1l6.4-6.4c.8.4 1.7.6 2.6.6 1.3 0 2.5-.4 3.6-1.1.9-.6 1.7-1.4 2.2-2.4.7-1.3.9-2.8.6-4.2-.4-1.8-1.5-3.4-3.1-4.3zm-1.6 7.1c-.5.7-1.2 1.3-2 1.6-.8.3-1.7.4-2.5.1-.8-.3-1.5-.8-2-1.5-.5-.7-.8-1.6-.7-2.5.1-.8.5-1.6 1.1-2.1.6-.5 1.4-.8 2.2-.8 1.6 0 3.1 1 3.6 2.5.3.8.3 1.6.1 2.4-.1.1-.1.2-.2.3zm6.1 7.1l-3.6 3.6c-.4.4-1.1.5-1.5.1l-6.4-6.4c-.4-.4-.5-1.1-.1-1.5l1.9-1.9c.4-.4 1.1-.5 1.5-.1l6.4 6.4c.4.4.5 1.1.1 1.5l-1.9 1.9c-.4.4-1.1.5-1.5.1l-6.4-6.4c.4.4.5 1.1.1 1.5l-1.9 1.9c-.4.4-1.1.5-1.5.1l-6.4-6.4c-.4-.4-.5-1.1-.1-1.5l1.9-1.9c.4-.4 1.1-.5 1.5-.1l6.4 6.4 3.6-3.6c.4-.4 1.1-.5 1.5-.1l1.9 1.9c.4.4.3 1-.1 1.4z"/>
-    <path d="M11.6 17.4v-3h-1v3h-3v1h3v3h1v-3h3v-1h-3zm8 0v-3h-1v3h-3v1h3v3h1v-3h3v-1h-3z"/>
-  </svg>
-);
-
-const EthIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" width="40" height="40">
-   <path d="M16 3l-9 11.7h18zm0 22.5l-9-11.7h18zM16 16.2l-4.5-5.8h9z"/>
-   <path d="M16 17.3l-4.5 5.8h9z"/>
-  </svg>
-);
-
-const SolIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" width="40" height="40">
-    <path d="M7 10h18v2H7zm0 5h18v2H7zm0 5h18v2H7z"/>
-  </svg>
-);
 
 // Placeholder for ANTY - replace with actual SVG
 const AntyIcon = () => (
@@ -236,24 +217,28 @@ export function DonationPage() {
       </Header>
 
       {/* --- Payment Options --- */}
-      <PaymentOptionsWrapper className="mb-5"> {/* Bootstrap margin bottom */}
+      <PaymentOptionsWrapper className="mb-5 ml-4"> {/* Bootstrap margin bottom */}
         <CryptoOptions>
           <div className="d-block">
           <div className="d-flex flex-wrap gap-4 justify-content-center justify-content-md-start"> {/* Bootstrap flex utilities */}
             <CryptoItem>
-              <BtcIcon />
+              <img height={60} src='images/bitcoin.png'></img>
+              {/* <BtcIcon /> */}
               BTC
             </CryptoItem>
             <CryptoItem>
-              <EthIcon />
+              <img height={60} src='images/ethereum-eth-logo.png'></img>
+              {/* <EthIcon /> */}
               ETH
             </CryptoItem>
             <CryptoItem>
-              <SolIcon />
+              <img height={60} src='images/solana.png'></img>
+              {/* <SolIcon /> */}
               SOL
             </CryptoItem>
             <CryptoItem>
-              <AntyIcon />
+              <img height={60} src='images/anti_shifty_logo_inv.png'></img>
+              {/* <AntyIcon /> */}
               ANTY
             </CryptoItem>
           </div>
@@ -275,12 +260,14 @@ export function DonationPage() {
       <Divider />
 
       {/* --- Donation Tiers --- */}
-      <TiersSectionTitle>Donation Tiers</TiersSectionTitle>
+      <TiersSectionTitle><h1>Donation Tiers</h1></TiersSectionTitle>
+
+      {/* <h1></h1> */}
 
       <TiersGrid>
         {donationTiers.map((tier, index) => (
           <TierCard key={index}>
-            <TierTitle>{tier.title}</TierTitle>
+           <TierTitle><h1>{tier.title}</h1></TierTitle> 
             <TierAmount>{tier.amount}</TierAmount>
             <TierPerksList>
               {tier.perks.map((perk, perkIndex) => (
