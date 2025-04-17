@@ -33,18 +33,18 @@ const Footer = (props) => {
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
                                 <div className="widget-title">
-                                    <h3>Important Link</h3>
+                                    <h3>Important Links</h3>
                                 </div>
                                 <ul>
-                                    <li><Link to="/blog">News</Link></li>
-                                    <li><Link to="/blog">Career </Link></li>
-                                    <li><Link to="/blog">Technology</Link></li>
-                                    <li><Link to="/blog">Startups</Link></li>
-                                    <li><Link to="/blog">Gadgets</Link></li>
-                                </ul>
+                                    <li><Link to="/about">About</Link></li>
+                                    <li><Link to="/merch-store">Merch Store </Link></li>
+                                    <li><Link to="/dao">Dao</Link></li>
+                                    <li><Link to="/report">Reports</Link></li>
+                                    <li><Link to="/donations">Donations</Link></li>
+                                </ul>   
                             </div>
                         </div>
-                        <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
+                        {/* <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget tag-widget">
                                 <div className="widget-title">
                                     <h3>Browse by Tag </h3>
@@ -60,7 +60,7 @@ const Footer = (props) => {
                                     <li><Link to="/foods">Foods</Link></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="col col-lg-2 col-md-6 col-sm-12 col-12">
                             <div className="widget social-widget">

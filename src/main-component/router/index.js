@@ -10,6 +10,7 @@ import { MerchStorePage } from '../HomePage/mods/new pages/MerchStore';
 import { AboutTruthFirstPage } from '../HomePage/mods/new pages/AboutPage';
 import { AntyEcosystem } from '../HomePage/mods/new pages/AntyEcosystem';
 import { DaoPage } from '../HomePage/mods/new pages/Dao';
+import { DonationsScreen } from '../HomePage/mods/new pages/DonationsPage';
 ;
 
 
@@ -31,7 +32,8 @@ const AllRoute = () => {
           <Route path='report' element={<ReportPage />} />
           <Route path='merch-store' element={<MerchStorePage />} />
           <Route path='about' element={<AboutTruthFirstPage />} />
-          <Route path='anty-ecosystem' element={<AntyEcosystem />} />
+          {/* <Route path='anty-ecosystem' element={<AntyEcosystem />} /> */}
+          <Route path='donations' element={<DonationsScreen />} />
         </Routes>
       </BrowserRouter>
 

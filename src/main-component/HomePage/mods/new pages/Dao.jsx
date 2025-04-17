@@ -2,6 +2,8 @@
 import React, { Fragment } from 'react';
 import Navbar2 from '../../../../components/Navbar2/Navbar2';
 import { DonationPage } from '../components/DonationPage';
+import { PeopleDecide } from '../components/PeopleDecide';
+import Footer from '../../../../components/footer/Footer';
 
 export const DaoPage = () => {
     return (
@@ -12,15 +14,15 @@ export const DaoPage = () => {
                     <div className="container">
                         <div className="row justify-content-center"> {/* <== centers the column */}
                             <div className="text-center col-lg-9">     {/* <== center text inside */}
-                                <DonationPage />
+                                <PeopleDecide />
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* <SponsoredNews />
           <Subscribe />
-          <Footer />
           <Scrollbar /> */}
+          <Footer />
             </div>
         </Fragment>
     );

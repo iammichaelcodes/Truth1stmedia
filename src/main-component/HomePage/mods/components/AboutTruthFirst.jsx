@@ -139,19 +139,16 @@ export function AboutTruthFirst() {
           {/* Right Column: Image Placeholder */}
           {/* Takes the other 6/12 columns on lg+. */}
           {/* 'mt-4 mt-lg-0' adds margin-top on smaller screens when stacked, but none on large+ */}
-          <div className="col-lg-6 mt-4 mt-lg-0">
-            <ImagePlaceholder>
-              {/* Triangle SVG Icon */}
-              <PlaceholderIcon viewBox="0 0 100 85">
-                <polygon points="50,0 100,85 0,85"/>
-              </PlaceholderIcon>
-            </ImagePlaceholder>
+          <div className="col-lg-6 mt-4 mt-lg-0 p-1 ">
+          <img height={400} src="/images/truth_first_banner.jpg" alt="" />
+          
           </div>
 
         </div> {/* End .row */}
 
       </ContentContainer>
     </PageSection>
+    
   );
 }
 
