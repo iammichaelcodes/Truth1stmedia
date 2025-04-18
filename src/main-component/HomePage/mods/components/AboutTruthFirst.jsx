@@ -59,11 +59,11 @@ const AboutHeading = styled.h2`
 
 const AboutParagraph = styled.p`
   font-size: 1rem;
-  line-height: 1.1;
+  line-height: 1.6;
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -98,44 +98,26 @@ export function AboutTruthFirst() {
         </HeaderWrapper>
 
         <div className="row align-items-center">
-          <div className="col-lg-6">
-            {/* <AboutHeading><h1>ABOUT</h1></AboutHeading> */}
-            <AboutParagraph>
-            <AboutParagraph>Organization Name: TruthFirst Media LLC </AboutParagraph>
-            <AboutParagraph>Owned Channels on X (formerly Twitter): </AboutParagraph>
-            <AboutParagraph> • @theantishifty – Political satire, anti-corruption, global finance commentary.</AboutParagraph>
-            
-
-
-
-            <AboutParagraph>• @memesensemd – Satirical insights, diagnosing and exposing ideological extremism.</AboutParagraph>
-            <AboutParagraph>• @theantishiftyes – Spanish-language satire, anti-corruption, political commentary.</AboutParagraph>
-            <AboutParagraph>• @cazopendejoss – Spanish-language cultural satire, exposing stupidity across ideologies.</AboutParagraph>
-            <AboutParagraph>• @truthmediahq – Central hub for all TruthFirst Media updates, drops, and community alerts.</AboutParagraph>
-
-<AboutParagraph>  Additional Information:
-Additional channels will be introduced soon.
-All channels are governed by our community-driven token: $ANTY.</AboutParagraph> 
-
-<AboutParagraph>Exchange Listings – Already Live:</AboutParagraph> 
-<AboutParagraph>✅ Coinstore: ANTY/USDT</AboutParagraph> 
-<AboutParagraph>✅ Moontok: ANTY</AboutParagraph> 
-<AboutParagraph>✅ KCEX: ANTY/USDT</AboutParagraph> 
-<AboutParagraph>✅ WEEX: ANTY/USDT</AboutParagraph> 
-<AboutParagraph>More monetization strategies, revenue-sharing details, and exciting developments will be transparently shared with our community very soon.</AboutParagraph> 
-
-
-
-
-
-
-
-            </AboutParagraph>
-            
+          {/* Image first on small screens, text first on large */}
+          <div className="col-lg-6 order-1 order-lg-2 mt-4 mt-lg-0 p-1">
+            <StyledImage src="/images/truth_first_banner.jpg" alt="Truth First Banner" />
           </div>
 
-          <div className="col-lg-6 mt-4 mt-lg-0 p-1">
-            <StyledImage src="/images/truth_first_banner.jpg" alt="Truth First Banner" />
+          <div className="col-lg-6 order-2 order-lg-1">
+            <AboutParagraph><strong>Organization Name:</strong> TruthFirst Media LLC</AboutParagraph>
+            <AboutParagraph><strong>Owned Channels on X (formerly Twitter):</strong></AboutParagraph>
+            <AboutParagraph>• <strong>@theantishifty</strong> – Political satire, anti-corruption, global finance commentary.</AboutParagraph>
+            <AboutParagraph>• <strong>@memesensemd</strong> – Satirical insights, diagnosing and exposing ideological extremism.</AboutParagraph>
+            <AboutParagraph>• <strong>@theantishiftyes</strong> – Spanish-language satire, anti-corruption, political commentary.</AboutParagraph>
+            <AboutParagraph>• <strong>@cazopendejoss</strong> – Spanish-language cultural satire, exposing stupidity across ideologies.</AboutParagraph>
+            <AboutParagraph>• <strong>@truthmediahq</strong> – Central hub for all TruthFirst Media updates, drops, and community alerts.</AboutParagraph>
+            <AboutParagraph><strong>Additional Information:</strong> Additional channels will be introduced soon. All channels are governed by our community-driven token: <strong>$ANTY</strong>.</AboutParagraph>
+            <AboutParagraph><strong>Exchange Listings – Already Live:</strong></AboutParagraph>
+            <AboutParagraph>✅ Coinstore: ANTY/USDT</AboutParagraph>
+            <AboutParagraph>✅ Moontok: ANTY</AboutParagraph>
+            <AboutParagraph>✅ KCEX: ANTY/USDT</AboutParagraph>
+            <AboutParagraph>✅ WEEX: ANTY/USDT</AboutParagraph>
+            <AboutParagraph><strong>More monetization strategies</strong>, revenue-sharing details, and exciting developments will be transparently shared with our community very soon.</AboutParagraph>
           </div>
         </div>
       </ContentContainer>
