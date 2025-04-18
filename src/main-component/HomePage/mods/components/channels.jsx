@@ -10,6 +10,19 @@ const DollarIconSVG = ({ size = '100%', style = {} }) => (
     style={{ width: size, height: size, display: 'block', ...style }}
   />
 );
+const CazoSvg = ({ size = '100%', style = {} }) => (
+  <img
+    src="/images/cazopendejoss.jpg"
+    alt="Cazopendejoss Icon"
+    style={{
+      width: size,
+      height: size,
+      display: 'block',
+      borderRadius: '50%',
+      ...style
+    }}
+  />
+);
 
 const FaceIconSVG = ({ size = '100%', style = {} }) => (
   <img
@@ -33,13 +46,11 @@ const SocialLinks = styled.div`
   gap: 1.5rem;
 
   @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;  /* Centering items horizontally */
-    justify-content: flex-start;  /* Aligning items at the top of the container */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    width: 100%;  /* Ensuring that the container takes full width */
+    width: 100%;
   }
-
 `;
 
 const SocialLinkItem = styled.a`
@@ -48,9 +59,16 @@ const SocialLinkItem = styled.a`
   text-decoration: none;
   color: #1e2a33;
   transition: opacity 0.2s ease-in-out;
+  height: 100%;
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -69,7 +87,8 @@ const IconCircle = styled.span`
   @media (max-width: 600px) {
     width: 40px;
     height: 40px;
-    margin-right: 0.5rem;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
 `;
 
@@ -79,7 +98,7 @@ const LinkText = styled.span`
   line-height: 1.2;
 
   @media (max-width: 600px) {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -100,12 +119,12 @@ export const Channels = () => {
           <IconCircle>
             <FaceIconSVG />
           </IconCircle>
-          <LinkText>AMemeSenseMD</LinkText>
+          <LinkText>@MemeSenseMD</LinkText>
         </SocialLinkItem>
 
         <SocialLinkItem href="https://x.com/TheAntiShiftyES?t=jvwPEu1KPM7-pOKECHmO4A&s=09" target="_blank" rel="noopener noreferrer">
           <IconCircle>
-            <DollarIconSVG />
+            <CazoSvg />
           </IconCircle>
           <LinkText>@CazoPendejoss</LinkText>
         </SocialLinkItem>
