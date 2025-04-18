@@ -22,7 +22,6 @@ const HeaderWrapper = styled.div.attrs({
 const MainHeading = styled.h1`
   font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
   color: #000000;
 
   @media (max-width: 768px) {
@@ -60,9 +59,11 @@ const AboutHeading = styled.h2`
 
 const AboutParagraph = styled.p`
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.1;
+  text-align: left;
+  font-weight: 600;
   color: #333;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -98,13 +99,39 @@ export function AboutTruthFirst() {
 
         <div className="row align-items-center">
           <div className="col-lg-6">
-            <AboutHeading>ABOUT</AboutHeading>
+            {/* <AboutHeading><h1>ABOUT</h1></AboutHeading> */}
             <AboutParagraph>
-              TruthFirst Media LLC operate four channels on X (formerly Twitter), to deliver sharp, satirical commentary in both English and Spanish.
+            <AboutParagraph>Organization Name: TruthFirst Media LLC </AboutParagraph>
+            <AboutParagraph>Owned Channels on X (formerly Twitter): </AboutParagraph>
+            <AboutParagraph> • @theantishifty – Political satire, anti-corruption, global finance commentary.</AboutParagraph>
+            
+
+
+
+            <AboutParagraph>• @memesensemd – Satirical insights, diagnosing and exposing ideological extremism.</AboutParagraph>
+            <AboutParagraph>• @theantishiftyes – Spanish-language satire, anti-corruption, political commentary.</AboutParagraph>
+            <AboutParagraph>• @cazopendejoss – Spanish-language cultural satire, exposing stupidity across ideologies.</AboutParagraph>
+            <AboutParagraph>• @truthmediahq – Central hub for all TruthFirst Media updates, drops, and community alerts.</AboutParagraph>
+
+<AboutParagraph>  Additional Information:
+Additional channels will be introduced soon.
+All channels are governed by our community-driven token: $ANTY.</AboutParagraph> 
+
+<AboutParagraph>Exchange Listings – Already Live:</AboutParagraph> 
+<AboutParagraph>✅ Coinstore: ANTY/USDT</AboutParagraph> 
+<AboutParagraph>✅ Moontok: ANTY</AboutParagraph> 
+<AboutParagraph>✅ KCEX: ANTY/USDT</AboutParagraph> 
+<AboutParagraph>✅ WEEX: ANTY/USDT</AboutParagraph> 
+<AboutParagraph>More monetization strategies, revenue-sharing details, and exciting developments will be transparently shared with our community very soon.</AboutParagraph> 
+
+
+
+
+
+
+
             </AboutParagraph>
-            <AboutParagraph>
-              Targeting corruption, extremism, and political absurdity.
-            </AboutParagraph>
+            
           </div>
 
           <div className="col-lg-6 mt-4 mt-lg-0 p-1">

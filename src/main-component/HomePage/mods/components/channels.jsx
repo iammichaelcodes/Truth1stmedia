@@ -89,25 +89,33 @@ export const Channels = () => {
   return (
     <Container>
       <SocialLinks>
-        <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
+        <SocialLinkItem href="https://x.com/TheAntishifty?t=cJh0sl58NlxdV4ig9R-4Pw&s-09" target="_blank" rel="noopener noreferrer">
           <IconCircle>
             <DollarIconSVG />
           </IconCircle>
           <LinkText>@TheAntiShifty</LinkText>
         </SocialLinkItem>
 
-        <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
+        <SocialLinkItem href="https://x.com/MemeSenseMD?t=uwbWybtZXJGVgG5dBCaqQA&s=09" target="_blank" rel="noopener noreferrer">
           <IconCircle>
             <FaceIconSVG />
           </IconCircle>
           <LinkText>AMemeSenseMD</LinkText>
         </SocialLinkItem>
 
-        <SocialLinkItem href="#" target="_blank" rel="noopener noreferrer">
+        <SocialLinkItem href="https://x.com/TheAntiShiftyES?t=jvwPEu1KPM7-pOKECHmO4A&s=09" target="_blank" rel="noopener noreferrer">
           <IconCircle>
             <DollarIconSVG />
           </IconCircle>
-          <LinkText>@CazoAntiShiftyES</LinkText>
+          <LinkText>@CazoPendejoss</LinkText>
+        </SocialLinkItem>
+
+      
+        <SocialLinkItem href="https://x.com/CazoPendejoss?t=j35ldoIKbxUvOIRy8grdnA&s=09" target="_blank" rel="noopener noreferrer">
+          <IconCircle>
+            <DollarIconSVG />
+          </IconCircle>
+          <LinkText>@AntiShiftyES</LinkText>
         </SocialLinkItem>
       </SocialLinks>
     </Container>

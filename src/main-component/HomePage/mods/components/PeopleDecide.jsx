@@ -278,7 +278,7 @@ export const PeopleDecide = () => {
         </IconContainer>
 
         <ProposalContent>
-          <ProposalTitle><h2 style={{color: 'black'}}>Proposal: Which merch design should we drop?</h2></ProposalTitle>
+          <ProposalTitle>Proposal: Which merch design should we drop?</ProposalTitle>
           <VotingEnds>Voting Ends: Friday 9PM EST</VotingEnds>
 
           <ResultsContainer>
