@@ -69,7 +69,7 @@ const Footer = (props) => {
                                 </div>
                                 <ul>
                                     <li><Link onClick={ClickHandler} to="/"><i><img src={ins1} alt="" /></i> Facebook</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/"><i><img src={ins2} alt="" /></i> Twitter</Link></li>
+                                    <li><a href="https://x.com/TruthFirstHQ?t=yYrDKADoolOcRHAsbHv1Fw&s=09"><i><img src={ins2} alt="https://x.com/TruthFirstHQ?t=yYrDKADoolOcRHAsbHv1Fw&s=09" /></i> Twitter</a></li>
                                     <li><Link onClick={ClickHandler} to="/"><i><img src={ins3} alt="" /></i> Instagram</Link></li>
                                     <li><Link onClick={ClickHandler} to="/"><i><img src={ins4} alt="" /></i> Youtube</Link></li>
                                 </ul>

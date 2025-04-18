@@ -17,12 +17,20 @@ const MainTitle = styled.h1`
   margin-bottom: 1rem;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
 `;
 
 const Subtitle = styled.p`
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #cccccc;
+
+  @media (max-width: 576px) {
+    font-size: 1rem;
+  }
 `;
 
 const ConnectButton = styled.button`
@@ -40,6 +48,10 @@ const SectionTitle = styled.h2`
   font-size: 1.8rem;
   margin: 2rem 0 1rem;
   text-transform: uppercase;
+
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const HolderBenefits = styled.p`
@@ -49,6 +61,10 @@ const HolderBenefits = styled.p`
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 576px) {
+    font-size: 1rem;
+  }
 `;
 
 const HolderTiers = styled.div`
@@ -56,6 +72,12 @@ const HolderTiers = styled.div`
   justify-content: center;
   gap: 2rem;
   margin: 2rem 0;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const TierCard = styled.div`
@@ -65,6 +87,8 @@ const TierCard = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 100%;
+  max-width: 400px;
 `;
 
 const TierIcon = styled.div`
@@ -100,10 +124,12 @@ const TierBenefit = styled.p`
 
 const FilterSection = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   margin: 2rem 0;
   align-items: center;
+  text-align: center;
 `;
 
 const FilterButton = styled.button`
@@ -126,6 +152,14 @@ const MerchGrid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 2rem 0;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const MerchItem = styled.div`
@@ -174,8 +208,6 @@ export const MemeticResistanceStore = () => {
       <Subtitle>Unlock exclusive gear. Rep the revolution. Powered by $ANTY.</Subtitle>
 
       <ConnectButton>Connect Wallet</ConnectButton>
-
-      {/* <button className="mb-4 btn btn-dark">Connect Wallet</button> */}
 
       <SectionTitle>Holding $ANTY comes with perks</SectionTitle>
       <HolderBenefits>
@@ -259,4 +291,3 @@ export const MemeticResistanceStore = () => {
     </Container>
   );
 };
-

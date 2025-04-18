@@ -4,31 +4,25 @@ import styled from 'styled-components';
 // --- Styled Components --- //
 
 const PageSection = styled.section.attrs({
-    // Add Bootstrap padding utility class for vertical spacing
-    className: 'py-5' // p = padding, y = top/bottom, 5 = spacing scale
+  className: 'py-5',
 })`
-  background-color: #f8f9fa; /* Light gray background, adjust if needed */
-  color: #212529; /* Dark text color */
+  background-color: #f8f9fa;
+  color: #212529;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 const ContentContainer = styled.div.attrs({
-    // Bootstrap container class for centered content with max-width
-    className: 'container'
-})`
-    // Add any specific container overrides here if needed
-`;
+  className: 'container',
+})``;
 
 const HeaderWrapper = styled.div.attrs({
-    // Center text and add bottom margin
-    className: 'text-center mb-5' // mb = margin-bottom, 5 = spacing scale
+  className: 'text-center mb-5',
 })``;
 
 const MainHeading = styled.h1`
-  font-size: 2.8rem; /* Adjust size as needed */
-  font-weight: 700; /* Bold */
-  margin-bottom: 0.75rem; /* Space between heading and subheading */
-  color: #000000; /* Black heading */
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000000;
 
   @media (max-width: 768px) {
     font-size: 2.2rem;
@@ -40,9 +34,9 @@ const MainHeading = styled.h1`
 
 const SubHeading = styled.p`
   font-size: 1.1rem;
-  color: #555; /* Medium gray for subheading */
+  color: #555;
   line-height: 1.6;
-  max-width: 600px; /* Limit width for better readability */
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -51,20 +45,11 @@ const SubHeading = styled.p`
   }
 `;
 
-// Using Bootstrap's row and column system for the two-column layout
-// No specific styled component needed for the row itself, just use className
-
-const AboutContentWrapper = styled.div.attrs({
-    // Make items align vertically centered within the row
-    className: 'align-items-center'
-})``;
-
-
 const AboutHeading = styled.h2`
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  text-transform: uppercase; /* ABOUT is uppercase */
+  text-transform: uppercase;
   color: #000000;
 
   @media (max-width: 576px) {
@@ -74,36 +59,30 @@ const AboutHeading = styled.h2`
 
 const AboutParagraph = styled.p`
   font-size: 1rem;
-  line-height: 1.7;
-  color: #333; /* Slightly lighter than pure black */
-  margin-bottom: 1.5rem; /* Space between paragraphs */
+  line-height: 1.1;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
 
   &:last-child {
-    margin-bottom: 0; /* No bottom margin on the last paragraph */
+    margin-bottom: 0;
   }
 `;
 
-const ImagePlaceholder = styled.div`
-  background-color: #e0e0e0; /* Light gray placeholder background */
-  position: relative;
+const StyledImage = styled.img`
   width: 100%;
-  padding-top: 100%; /* Creates a square aspect ratio */
-  border-radius: 0.375rem; /* Slight rounding */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const PlaceholderIcon = styled.svg`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20%; /* Adjust size relative to placeholder */
+  max-width: 500px;
   height: auto;
-  fill: #aaaaaa; /* Darker gray for the triangle icon */
-`;
+  border-radius: 0.375rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
 
 // --- React Component --- //
 
@@ -111,7 +90,6 @@ export function AboutTruthFirst() {
   return (
     <PageSection>
       <ContentContainer>
-
         <HeaderWrapper>
           <MainHeading>TruthFirst Media LLC</MainHeading>
           <SubHeading>
@@ -119,36 +97,48 @@ export function AboutTruthFirst() {
           </SubHeading>
         </HeaderWrapper>
 
-        {/* Using Bootstrap Row for the two-column layout */}
-        {/* 'row' is the flex container, 'col-lg-6' defines columns */}
-        {/* 'align-items-center' vertically aligns items in the row */}
         <div className="row align-items-center">
-
-          {/* Left Column: Text Content */}
-          {/* On large screens (lg) and up, takes 6/12 columns. Stacks below lg. */}
           <div className="col-lg-6">
-            <AboutHeading>ABOUT</AboutHeading>
+            {/* <AboutHeading><h1>ABOUT</h1></AboutHeading> */}
             <AboutParagraph>
-              TruthFirst Media LLC operate four channels on X (formerly Twitter), to deler sharp, satirical commentary in both English and Spanish.
+            <AboutParagraph>Organization Name: TruthFirst Media LLC </AboutParagraph>
+            <AboutParagraph>Owned Channels on X (formerly Twitter): </AboutParagraph>
+            <AboutParagraph> • @theantishifty – Political satire, anti-corruption, global finance commentary.</AboutParagraph>
+            
+
+
+
+            <AboutParagraph>• @memesensemd – Satirical insights, diagnosing and exposing ideological extremism.</AboutParagraph>
+            <AboutParagraph>• @theantishiftyes – Spanish-language satire, anti-corruption, political commentary.</AboutParagraph>
+            <AboutParagraph>• @cazopendejoss – Spanish-language cultural satire, exposing stupidity across ideologies.</AboutParagraph>
+            <AboutParagraph>• @truthmediahq – Central hub for all TruthFirst Media updates, drops, and community alerts.</AboutParagraph>
+
+<AboutParagraph>  Additional Information:
+Additional channels will be introduced soon.
+All channels are governed by our community-driven token: $ANTY.</AboutParagraph> 
+
+<AboutParagraph>Exchange Listings – Already Live:</AboutParagraph> 
+<AboutParagraph>✅ Coinstore: ANTY/USDT</AboutParagraph> 
+<AboutParagraph>✅ Moontok: ANTY</AboutParagraph> 
+<AboutParagraph>✅ KCEX: ANTY/USDT</AboutParagraph> 
+<AboutParagraph>✅ WEEX: ANTY/USDT</AboutParagraph> 
+<AboutParagraph>More monetization strategies, revenue-sharing details, and exciting developments will be transparently shared with our community very soon.</AboutParagraph> 
+
+
+
+
+
+
+
             </AboutParagraph>
-            <AboutParagraph>
-              Targeting corruption, extremism, and political absurdity.
-            </AboutParagraph>
+            
           </div>
 
-          {/* Right Column: Image Placeholder */}
-          {/* Takes the other 6/12 columns on lg+. */}
-          {/* 'mt-4 mt-lg-0' adds margin-top on smaller screens when stacked, but none on large+ */}
-          <div className="col-lg-6 mt-4 mt-lg-0 p-1 ">
-          <img height={400} src="/images/truth_first_banner.jpg" alt="" />
-          
+          <div className="col-lg-6 mt-4 mt-lg-0 p-1">
+            <StyledImage src="/images/truth_first_banner.jpg" alt="Truth First Banner" />
           </div>
-
-        </div> {/* End .row */}
-
+        </div>
       </ContentContainer>
     </PageSection>
-    
   );
 }
-
