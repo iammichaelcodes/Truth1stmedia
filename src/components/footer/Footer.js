@@ -30,17 +30,20 @@ const mobileStyle = `
     }
     
     .wpo-site-footer .link-widget ul li {
-        text-align: center;
+        text-align: left;
         list-style-type: none;
     }
     
     .wpo-site-footer .social-widget ul {
         text-align: center;
-        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-left: 10;
     }
     
     .wpo-site-footer .social-widget ul li {
-        text-align: center;
         list-style-type: none;
     }
     
@@ -101,18 +104,18 @@ const Footer = (props) => {
                                     <h3>Social Media</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/">
-                                        <i><img height={35} src={ins1} alt="" /></i> Facebook
-                                    </Link></li>
+                                    <li><a href="https://truthsocial.com/group/the-antishifty">
+                                        <i><img height={35} src={ins1} alt="" /></i> Truth Social
+                                    </a></li>
                                     <li><a href="https://x.com/TruthFirstHQ?t=yYrDKADoolOcRHAsbHv1Fw&s=09">
                                         <i><img height={35} src={ins2} alt="" /></i> X
                                     </a></li>
-                                    <li><Link onClick={ClickHandler} to="/">
-                                        <i><img height={35} src={ins3} alt="" /></i> Instagram
-                                    </Link></li>
-                                    <li><Link onClick={ClickHandler} to="/">
-                                        <i><img height={35} src={ins4} alt="" /></i> Youtube
-                                    </Link></li>
+                                    <li><a href="https://www.dextools.io/app/en/solana/pair-explorer/JauozBegJxyMEzJCrj9dEf2Donr3K9qCism6zhfdfim?t=1744923064095">
+                                        <i><img height={35} src={ins3} alt="" /></i> DexTools
+                                    </a></li>
+                                    <li><a href="https://t.me/ANTOFFICIALXCOMMUNITY">
+                                        <i><img height={35} src={ins4} alt="" /></i> Telegram
+                                    </a></li>
                                 </ul>
                             </div>
                         </div>
